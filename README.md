@@ -83,5 +83,3 @@ chmod +x ram_check.sh
 * Can be integrated with a **cron job** for periodic checks and notifications.
 
 ---
-
-Let me know if you’d also like me to help generate the actual GitHub repo structure with the files (e.g., a ZIP or downloadable package).
