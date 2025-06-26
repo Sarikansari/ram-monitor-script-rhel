@@ -1,16 +1,16 @@
-### ✅ GitHub Repository Name:
+### GitHub Repository Name:
 
 `ram-monitor-script-rhel`
 
 ---
 
-### 📄 Description (for GitHub):
+### Description (for GitHub):
 
 > A simple Bash script developed for **Red Hat Enterprise Linux (RHEL)** systems that monitors available RAM. It checks the current available RAM size and issues a warning if it falls below a defined threshold. Ideal for lightweight system monitoring or cron-based alerts in production/testing environments.
 
 ---
 
-### 📁 Project Structure
+### Project Structure
 
 ```
 ram-monitor-script-rhel/
@@ -20,7 +20,7 @@ ram-monitor-script-rhel/
 
 ---
 
-### 📜 Script: `ram_check.sh`
+### Script: `ram_check.sh`
 
 ```bash
 #!/bin/bash
@@ -38,7 +38,7 @@ fi
 
 ---
 
-### ⚙️ How it works
+### How it works
 
 * The script uses `free -mt` to display memory usage in megabytes.
 * It filters the "Total" memory line using `grep`.
@@ -48,7 +48,7 @@ fi
 
 ---
 
-### 🧪 Sample Output
+### Sample Output
 
 ```bash
 [root@localhost projects]# free -mt | grep "Total"
@@ -61,7 +61,7 @@ RAM Space is sufficient - 3383 M
 
 ---
 
-### 📝 Usage
+### Usage
 
 1. Make the script executable:
 
@@ -77,7 +77,7 @@ chmod +x ram_check.sh
 
 ---
 
-### 📌 Notes
+### Notes
 
 * Customize the threshold value by changing the `TH=500` line.
 * Can be integrated with a **cron job** for periodic checks and notifications.
